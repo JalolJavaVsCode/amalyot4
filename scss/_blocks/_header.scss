@@ -1,0 +1,148 @@
+
+.start {
+  position: relative;
+  max-width: 1500px;
+  // height: 800px;
+  width: 100%;
+  margin: 0 auto;
+ 
+
+}
+.header-site {
+  position: fixed;
+  max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+  top: 0;
+  
+  transition: all .5s linear;
+}
+
+.header-site__wrapper {
+display: flex;
+align-items: center;
+// justify-content: space-between;
+}
+.header-site__logo-link {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 155px;
+  transition: all .3s linear;
+}
+
+.header-site__img {
+  // display: block;
+    transition: all .3s linear;
+}
+nav {
+  margin-left: auto;
+}
+
+.header-site__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.header-site__item {
+border-bottom: 2px solid transparent;
+transition: border-bottom 0.3s linear;
+&:hover {
+  border-bottom: 2px solid #D8B152;
+}
+}
+.logo {
+  display: none;
+}
+
+.header-site__link {
+  color: #FFF;
+   
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.kok {
+  color: #424242;
+}
+.header-scrol {
+  background: #100a0a5f;
+  backdrop-filter: blur(5px);
+  transition: .5s;
+  align-items: center;
+}
+.header-scrol .header-site__img {
+  height: 135px;
+  position:absolute;
+  top: calc(50% - 46px);
+transition: all 0.3s;
+}
+.header-scrol .header-site__logo-link {
+  height: 105px;
+transition: all 0.2s linear;
+}
+.header-scrol .logo2 {
+  display: none;
+  
+}
+.header-scrol .logo {
+  display: block;
+
+}
+.header-scrol .kok {
+  color: #FFF;
+}
+
+ html,
+ body {
+   position: relative;
+   height: 100%;
+ }
+
+ body {
+   background: #eee;
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+ }
+
+ swiper-container {
+  position: absolute;
+  z-index: 0.2;
+  min-height: 800px;
+   width: 100%;
+   height: 100%;
+ }
+
+ swiper-slide {
+    // min-height: 800px;
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ swiper-slide img {
+   display: block;
+   width: 100%;
+    min-height: 800px;
+   object-fit: cover;
+ }
+
+ .swiper-v {
+   background: #eee;
+ }
+ @media only screen  and (max-width: 800px){
+  nav {
+    display: none;
+  }
+ }
